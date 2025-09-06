@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookStore Pro - Cửa Hàng Sách Trực Tuyến</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Google Play Store App Install Guide - Download Android Apps Safely</title>
+    <meta name="description" content="Complete guide to Google Play Store app installation. Learn how to download, install, and manage Android apps safely. Expert tips and troubleshooting solutions.">
+    <meta name="keywords" content="google play store, play store app install, android apps, app download, mobile apps installation, play store guide">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Google Play Store Guide">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Google Play Store App Install Guide">
+    <meta property="og:description" content="Master the art of Play Store app installation with our comprehensive guide. Safe, fast, and reliable app downloads.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/images/google-play-store-guide.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Google Play Store App Install Guide">
+    <meta name="twitter:description" content="Complete guide to Google Play Store app installation. Expert tips and best practices.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/google-play-store-guide.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Google Play Store App Install Guide",
+        "description": "Complete guide to Google Play Store app install process with expert tips and troubleshooting solutions.",
+        "author": {
+            "@type": "Organization",
+            "name": "Google Play Store Guide"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Google Play Store Guide"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "/google-play-store-guide.html"
+        },
+        "about": {
+            "@type": "SoftwareApplication",
+            "name": "Google Play Store",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication"
+        }
+    }
+    </script>
+    
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #e74c3c;
-            --accent-color: #f39c12;
-            --text-color: #2c3e50;
-            --light-gray: #ecf0f1;
-            --white: #ffffff;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
+            --google-blue: #4285f4;
+            --google-green: #34a853;
+            --google-yellow: #fbbc04;
+            --google-red: #ea4335;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --background: #ffffff;
+            --surface: #f8f9fa;
+            --border: #dadce0;
+            --shadow: 0 1px 6px rgba(32,33,36,.28);
+            --shadow-hover: 0 2px 10px rgba(32,33,36,.28);
         }
 
         * {
@@ -24,10 +75,10 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: #f8f9fa;
+            color: var(--text-primary);
+            background-color: var(--background);
         }
 
         .container {
@@ -36,514 +87,553 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+        /* Header */
         header {
-            background: var(--white);
+            background: var(--background);
             box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
+            position: sticky;
             top: 0;
             z-index: 1000;
-        }
-
-        .header-top {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 8px 0;
-            font-size: 0.9rem;
-        }
-
-        .header-top .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .contact-info {
-            display: flex;
-            gap: 20px;
-        }
-
-        .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .main-header {
-            padding: 15px 0;
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 16px 0;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .logo i {
-            color: var(--secondary-color);
-        }
-
-        .search-bar {
-            flex: 1;
-            max-width: 500px;
-            margin: 0 30px;
-            position: relative;
-        }
-
-        .search-container {
-            display: flex;
-            background: var(--light-gray);
-            border-radius: 25px;
-            overflow: hidden;
-        }
-
-        .search-container input {
-            flex: 1;
-            border: none;
-            padding: 12px 20px;
-            font-size: 1rem;
-            background: transparent;
-            outline: none;
-        }
-
-        .search-container button {
-            background: var(--secondary-color);
-            color: var(--white);
-            border: none;
-            padding: 12px 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .search-container button:hover {
-            background: #c0392b;
-        }
-
-        .header-actions {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .header-btn {
-            display: flex;
-            align-items: center;
             gap: 8px;
-            background: none;
-            border: none;
-            color: var(--text-color);
-            cursor: pointer;
-            padding: 8px 12px;
-            border-radius: 5px;
-            transition: background 0.3s;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--text-primary);
             text-decoration: none;
-            font-size: 0.9rem;
         }
 
-        .header-btn:hover {
-            background: var(--light-gray);
-        }
-
-        .cart-badge {
-            background: var(--secondary-color);
-            color: var(--white);
-            border-radius: 50%;
-            padding: 2px 6px;
-            font-size: 0.7rem;
-            margin-left: 5px;
-        }
-
-        /* Navigation */
-        .navigation {
-            background: var(--light-gray);
-            padding: 12px 0;
-            border-top: 1px solid #ddd;
+        .google-play-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(45deg, var(--google-blue), var(--google-green));
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
         }
 
         .nav-menu {
             display: flex;
-            justify-content: center;
             list-style: none;
-            gap: 40px;
+            gap: 32px;
         }
 
         .nav-menu a {
-            color: var(--text-color);
+            color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: all 0.3s;
+            font-weight: 400;
+            transition: color 0.2s;
+            padding: 8px 0;
         }
 
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            background: var(--secondary-color);
-            color: var(--white);
+        .nav-menu a:hover {
+            color: var(--google-blue);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f39c12" width="1200" height="600"/><path fill="%23e74c3c" d="M0 400L50 380C100 360 200 320 300 300C400 280 500 280 600 290C700 300 800 320 900 310C1000 300 1100 260 1150 240L1200 220V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V400Z"/></svg>');
-            background-size: cover;
-            background-position: center;
-            padding: 200px 0 100px;
+            background: linear-gradient(135deg, var(--google-blue) 0%, var(--google-green) 100%);
+            color: white;
+            padding: 80px 0;
             text-align: center;
-            color: var(--white);
-            margin-top: 140px;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 32px;
             opacity: 0.9;
+            font-weight: 300;
         }
 
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 5px;
+        .play-store-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--google-red);
+            color: white;
+            padding: 16px 32px;
             text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.2s;
+            margin: 8px;
         }
 
-        .btn-primary {
-            background: var(--secondary-color);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background: #c0392b;
+        .play-store-button:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-hover);
         }
 
-        .btn-outline {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
+        .play-store-button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
         }
 
-        .btn-outline:hover {
-            background: var(--white);
-            color: var(--primary-color);
+        .play-store-button.secondary:hover {
+            background: white;
+            color: var(--google-blue);
         }
 
-        /* Categories Section */
-        .categories {
+        /* Google Play Stats */
+        .stats-section {
             padding: 80px 0;
-            background: var(--white);
+            background: var(--surface);
         }
 
-        .section-title {
+        .stats-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 48px;
+            color: var(--text-primary);
         }
 
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #7f8c8d;
-            margin-bottom: 60px;
-        }
-
-        .categories-grid {
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-
-        .category-card {
-            background: var(--white);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-            transition: all 0.3s;
-            cursor: pointer;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
             text-align: center;
-            padding: 30px 20px;
         }
 
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .category-icon {
-            font-size: 3rem;
-            color: var(--secondary-color);
-            margin-bottom: 15px;
-        }
-
-        .category-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .category-card p {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-        }
-
-        /* Products Section */
-        .products {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .filter-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .filter-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 8px 16px;
-            border: 2px solid var(--light-gray);
-            background: var(--white);
-            color: var(--text-color);
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 0.9rem;
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: var(--secondary-color);
-            color: var(--white);
-            border-color: var(--secondary-color);
-        }
-
-        .sort-select {
-            padding: 8px 12px;
-            border: 2px solid var(--light-gray);
-            border-radius: 5px;
-            background: var(--white);
-            cursor: pointer;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background: var(--white);
-            border-radius: 10px;
+        .stat-card {
+            background: var(--background);
+            padding: 40px 24px;
+            border-radius: 12px;
             box-shadow: var(--shadow);
-            overflow: hidden;
-            transition: all 0.3s;
-            position: relative;
+            transition: transform 0.2s;
         }
 
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+        .stat-card:hover {
+            transform: translateY(-4px);
         }
 
-        .product-image {
-            position: relative;
-            overflow: hidden;
-            height: 250px;
-            background: var(--light-gray);
+        .stat-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 24px;
+            color: white;
         }
 
-        .product-image i {
-            font-size: 4rem;
-            color: #bdc3c7;
-        }
+        .stat-icon.apps { background: var(--google-blue); }
+        .stat-icon.users { background: var(--google-green); }
+        .stat-icon.downloads { background: var(--google-yellow); color: var(--text-primary); }
+        .stat-icon.security { background: var(--google-red); }
 
-        .product-badge {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: var(--secondary-color);
-            color: var(--white);
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .product-info {
-            padding: 20px;
-        }
-
-        .product-title {
-            font-size: 1.1rem;
-            font-weight: bold;
+        .stat-number {
+            font-size: 36px;
+            font-weight: 300;
+            color: var(--text-primary);
+            display: block;
             margin-bottom: 8px;
-            color: var(--primary-color);
-            line-height: 1.3;
         }
 
-        .product-author {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 16px;
         }
 
-        .product-rating {
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 64px;
+        }
+
+        .article-content {
+            max-width: none;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .subsection-title {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 48px 0 16px;
+            color: var(--google-blue);
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background: #e8f0fe;
+            border-left: 4px solid var(--google-blue);
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box strong {
+            color: var(--google-blue);
+        }
+
+        /* Installation Steps */
+        .installation-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin: 32px 0;
+        }
+
+        .installation-steps li {
+            counter-increment: step-counter;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            position: relative;
+            padding-left: 80px;
+            transition: box-shadow 0.2s;
+        }
+
+        .installation-steps li:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .installation-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 24px;
+            top: 24px;
+            background: var(--google-blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 5px;
-            margin-bottom: 10px;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 18px;
         }
 
-        .stars {
-            color: var(--accent-color);
+        .step-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
         }
 
-        .rating-text {
-            color: #7f8c8d;
-            font-size: 0.8rem;
+        .step-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
 
-        .product-price {
-            display: flex;
+        /* App Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .category-card {
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--google-blue);
+        }
+
+        .category-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .category-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .category-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .play-store-link {
+            display: inline-flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .current-price {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: #7f8c8d;
-            font-size: 1rem;
-        }
-
-        .product-actions {
-            display: flex;
-            gap: 10px;
-        }
-
-        .btn-sm {
-            padding: 8px 16px;
-            font-size: 0.9rem;
-            flex: 1;
-            text-align: center;
-        }
-
-        .btn-outline-primary {
-            background: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-        }
-
-        .btn-outline-primary:hover {
-            background: var(--primary-color);
-            color: var(--white);
-        }
-
-        /* Newsletter */
-        .newsletter {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .newsletter h2 {
-            margin-bottom: 20px;
-        }
-
-        .newsletter p {
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .newsletter-form {
-            display: flex;
-            max-width: 400px;
-            margin: 0 auto;
-            gap: 10px;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .newsletter-form button {
-            background: var(--secondary-color);
-            color: var(--white);
-            border: none;
+            gap: 8px;
+            background: var(--google-green);
+            color: white;
             padding: 12px 20px;
-            border-radius: 5px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            margin: 8px 4px;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+
+        .play-store-link:hover {
+            background: #2d7d32;
+            transform: translateY(-1px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 24px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 32px;
+        }
+
+        .sidebar-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .quick-links {
+            list-style: none;
+        }
+
+        .quick-links li {
+            margin-bottom: 12px;
+        }
+
+        .quick-links a {
+            color: var(--google-blue);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .quick-links a:hover {
+            color: var(--google-green);
+        }
+
+        .popular-apps {
+            list-style: none;
+        }
+
+        .popular-apps li {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .popular-apps li:last-child {
+            border-bottom: none;
+        }
+
+        .app-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--surface);
+            border-radius: 8px;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .app-name {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        .app-category {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--surface);
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 48px;
+            color: var(--text-primary);
+        }
+
+        .faq-item {
+            background: var(--background);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            background: var(--google-blue);
+            color: white;
+            padding: 20px 24px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 500;
+            transition: background 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #3367d6;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            padding: 24px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Security Features */
+        .security-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .security-card {
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .security-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--google-green);
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .security-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .security-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
         }
 
         /* Footer */
         footer {
-            background: #2c3e50;
-            color: var(--white);
-            padding: 60px 0 20px;
+            background: var(--text-primary);
+            color: white;
+            padding: 64px 0 24px;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 48px;
+            margin-bottom: 32px;
         }
 
         .footer-section h3 {
-            margin-bottom: 20px;
-            color: var(--accent-color);
+            margin-bottom: 16px;
+            font-weight: 500;
+            color: var(--google-yellow);
         }
 
         .footer-section ul {
@@ -555,241 +645,79 @@
         }
 
         .footer-section ul li a {
-            color: #bdc3c7;
+            color: #ccc;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.2s;
+            font-size: 14px;
         }
 
         .footer-section ul li a:hover {
-            color: var(--white);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: var(--secondary-color);
-            color: var(--white);
-            border-radius: 50%;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            background: var(--accent-color);
-            transform: translateY(-2px);
+            color: white;
         }
 
         .footer-bottom {
-            border-top: 1px solid #34495e;
-            padding-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 24px;
             text-align: center;
-            color: #bdc3c7;
-        }
-
-        /* Shopping Cart Modal */
-        .cart-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 2000;
-        }
-
-        .cart-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: var(--white);
-            width: 90%;
-            max-width: 600px;
-            max-height: 80%;
-            border-radius: 10px;
-            overflow-y: auto;
-        }
-
-        .cart-header {
-            padding: 20px;
-            border-bottom: 1px solid var(--light-gray);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .close-cart {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #7f8c8d;
-        }
-
-        .cart-items {
-            padding: 20px;
-        }
-
-        .cart-item {
-            display: flex;
-            gap: 15px;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        .cart-item:last-child {
-            border-bottom: none;
-        }
-
-        .cart-item-image {
-            width: 60px;
-            height: 80px;
-            background: var(--light-gray);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cart-item-info {
-            flex: 1;
-        }
-
-        .cart-item-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .cart-item-price {
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-
-        .quantity-controls {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .quantity-btn {
-            width: 30px;
-            height: 30px;
-            border: 1px solid var(--light-gray);
-            background: var(--white);
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        .quantity {
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .remove-item {
-            background: var(--secondary-color);
-            color: var(--white);
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 0.8rem;
-        }
-
-        .cart-total {
-            padding: 20px;
-            border-top: 1px solid var(--light-gray);
-            background: var(--light-gray);
-        }
-
-        .total-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-
-        .total-row.final {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
+            color: #ccc;
+            font-size: 14px;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
+            .hero h1 {
+                font-size: 36px;
             }
 
-            .search-bar {
-                margin: 0;
-                max-width: 100%;
+            .hero-subtitle {
+                font-size: 18px;
             }
 
-            .header-actions {
-                justify-content: center;
+            .content-layout {
+                grid-template-columns: 1fr;
+                gap: 48px;
             }
 
             .nav-menu {
-                flex-wrap: wrap;
-                gap: 20px;
+                display: none;
             }
 
-            .hero {
-                padding: 150px 0 80px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .filter-bar {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .products-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-
-            .newsletter-form {
-                flex-direction: column;
-            }
-
-            .footer-content {
+            .stats-grid {
                 grid-template-columns: 1fr;
-                text-align: center;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .installation-steps li {
+                padding-left: 24px;
+            }
+
+            .installation-steps li::before {
+                position: relative;
+                margin-bottom: 16px;
             }
         }
 
         @media (max-width: 480px) {
             .container {
-                padding: 0 15px;
+                padding: 0 16px;
             }
 
-            .products-grid {
-                grid-template-columns: 1fr;
+            .hero {
+                padding: 60px 0;
             }
 
-            .categories-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            .main-content,
+            .stats-section,
+            .faq-section {
+                padding: 60px 0;
+            }
+
+            .play-store-button {
+                display: block;
+                margin: 8px 0;
             }
         }
     </style>
@@ -797,176 +725,357 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> 0123 456 789</span>
-                    <span><i class="fas fa-envelope"></i> support@bookstore.vn</span>
-                </div>
-                <div class="header-links">
-                    <span>Miễn phí vận chuyển đơn hàng từ 200.000đ</span>
-                </div>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="google-play-icon">GP</div>
+                    Google Play Guide
+                </a>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        
-        <div class="main-header">
-            <div class="container">
-                <div class="header-content">
-                    <a href="#" class="logo">
-                        <i class="fas fa-book-open"></i>
-                        BookStore Pro
-                    </a>
-                    
-                    <div class="search-bar">
-                        <div class="search-container">
-                            <input type="text" placeholder="Tìm kiếm sách, tác giả, thể loại..." id="searchInput">
-                            <button type="button" onclick="searchBooks()">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="header-actions">
-                        <a href="#" class="header-btn">
-                            <i class="fas fa-heart"></i>
-                            Yêu thích
-                        </a>
-                        <button class="header-btn" onclick="toggleCart()">
-                            <i class="fas fa-shopping-cart"></i>
-                            Giỏ hàng
-                            <span class="cart-badge" id="cartCount">0</span>
-                        </button>
-                        <a href="#" class="header-btn">
-                            <i class="fas fa-user"></i>
-                            Tài khoản
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <nav class="navigation">
-            <div class="container">
-                <ul class="nav-menu">
-                    <li><a href="#home" class="active">Trang Chủ</a></li>
-                    <li><a href="#categories">Thể Loại</a></li>
-                    <li><a href="#products">Sản Phẩm</a></li>
-                    <li><a href="#bestsellers">Bán Chạy</a></li>
-                    <li><a href="#new-arrivals">Mới Nhất</a></li>
-                    <li><a href="#sale">Khuyến Mãi</a></li>
-                    <li><a href="#contact">Liên Hệ</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="container">
-            <h1>Cửa Hàng Sách Trực Tuyến</h1>
-            <p>Khám phá hàng nghìn cuốn sách hay từ các tác giả nổi tiếng trong nước và quốc tế</p>
-            <div class="cta-buttons">
-                <a href="#products" class="btn btn-primary">Mua Sách Ngay</a>
-                <a href="#categories" class="btn btn-outline">Khám Phá Thể Loại</a>
-            </div>
+            <h1>Google Play Store App Installation</h1>
+            <p class="hero-subtitle">Your complete guide to downloading and installing Android apps safely from Google Play Store</p>
+            <a href="https://play.google.com/store/apps" class="play-store-button" target="_blank" rel="noopener noreferrer">
+                <span>📱</span>
+                Visit Google Play Store
+            </a>
+            <a href="#installation" class="play-store-button secondary">
+                Start Learning
+            </a>
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories" id="categories">
+    <!-- Google Play Statistics -->
+    <section class="stats-section">
         <div class="container">
-            <h2 class="section-title">Thể Loại Sách</h2>
-            <p class="section-subtitle">Tìm hiểu các thể loại sách phong phú và đa dạng</p>
-            
-            <div class="categories-grid">
-                <div class="category-card" onclick="filterByCategory('van-hoc')">
-                    <div class="category-icon">
-                        <i class="fas fa-feather-alt"></i>
-                    </div>
-                    <h3>Văn Học</h3>
-                    <p>Tiểu thuyết, thơ ca, truyện ngắn</p>
+            <h2 class="stats-title">Google Play Store by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon apps">📱</div>
+                    <span class="stat-number">3.5M+</span>
+                    <div class="stat-label">Apps Available</div>
                 </div>
-                
-                <div class="category-card" onclick="filterByCategory('kinh-te')">
-                    <div class="category-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Kinh Tế</h3>
-                    <p>Đầu tư, khởi nghiệp, quản lý</p>
+                <div class="stat-card">
+                    <div class="stat-icon users">👥</div>
+                    <span class="stat-number">2.8B</span>
+                    <div class="stat-label">Active Users</div>
                 </div>
-                
-                <div class="category-card" onclick="filterByCategory('khoa-hoc')">
-                    <div class="category-icon">
-                        <i class="fas fa-atom"></i>
-                    </div>
-                    <h3>Khoa Học</h3>
-                    <p>Vật lý, hóa học, sinh học</p>
+                <div class="stat-card">
+                    <div class="stat-icon downloads">⬇️</div>
+                    <span class="stat-number">111B+</span>
+                    <div class="stat-label">Downloads in 2023</div>
                 </div>
-                
-                <div class="category-card" onclick="filterByCategory('tam-ly')">
-                    <div class="category-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Tâm Lý</h3>
-                    <p>Phát triển bản thân, tâm lý học</p>
-                </div>
-                
-                <div class="category-card" onclick="filterByCategory('thieu-nhi')">
-                    <div class="category-icon">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <h3>Thiếu Nhi</h3>
-                    <p>Truyện cổ tích, giáo dục</p>
-                </div>
-                
-                <div class="category-card" onclick="filterByCategory('ky-nang')">
-                    <div class="category-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Kỹ Năng</h3>
-                    <p>Kỹ năng sống, nghề nghiệp</p>
+                <div class="stat-card">
+                    <div class="stat-icon security">🛡️</div>
+                    <span class="stat-number">99.9%</span>
+                    <div class="stat-label">Security Success Rate</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
+    <!-- Main Content -->
+    <section class="main-content" id="installation">
         <div class="container">
-            <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
-            
-            <div class="filter-bar">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterProducts('all')">Tất Cả</button>
-                    <button class="filter-btn" onclick="filterProducts('bestseller')">Bán Chạy</button>
-                    <button class="filter-btn" onclick="filterProducts('new')">Mới Nhất</button>
-                    <button class="filter-btn" onclick="filterProducts('sale')">Khuyến Mãi</button>
-                </div>
-                
-                <select class="sort-select" onchange="sortProducts(this.value)">
-                    <option value="default">Sắp xếp mặc định</option>
-                    <option value="price-low">Giá thấp đến cao</option>
-                    <option value="price-high">Giá cao đến thấp</option>
-                    <option value="name">Tên A-Z</option>
-                    <option value="rating">Đánh giá cao nhất</option>
-                </select>
-            </div>
-            
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be loaded here -->
+            <div class="content-layout">
+                <article class="article-content">
+                    <h1 class="section-title">Complete Guide to Play Store App Install</h1>
+                    
+                    <p class="content-text">
+                        Google Play Store is the official app distribution platform for Android devices, serving over 2.8 billion users worldwide. This comprehensive guide covers everything you need to know about <strong>play store app install</strong> processes, ensuring secure and efficient app downloads on your Android device.
+                    </p>
+
+                    <div class="highlight-box">
+                        <p><strong>🔒 Security First:</strong> Always download apps from the official <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Google Play Store</a> to ensure maximum security. Google Play Protect scans over 125 billion apps daily to keep your device safe.</p>
+                    </div>
+
+                    <h2 class="subsection-title">Why Google Play Store?</h2>
+                    
+                    <p class="content-text">
+                        When you <strong>install apps from Google Play Store</strong>, you benefit from Google's robust security infrastructure and quality assurance processes:
+                    </p>
+
+                    <div class="security-features">
+                        <div class="security-card">
+                            <div class="security-icon">🔍</div>
+                            <h3 class="security-title">App Verification</h3>
+                            <p class="security-description">Every app is thoroughly reviewed and verified before publication</p>
+                        </div>
+                        <div class="security-card">
+                            <div class="security-icon">🛡️</div>
+                            <h3 class="security-title">Play Protect</h3>
+                            <p class="security-description">Real-time malware scanning and protection for your device</p>
+                        </div>
+                        <div class="security-card">
+                            <div class="security-icon">🔄</div>
+                            <h3 class="security-title">Auto Updates</h3>
+                            <p class="security-description">Automatic security patches and feature updates</p>
+                        </div>
+                    </div>
+
+                    <h2 class="subsection-title">Step-by-Step Installation Process</h2>
+
+                    <ol class="installation-steps">
+                        <li>
+                            <div class="step-title">Access Google Play Store</div>
+                            <div class="step-description">Open the Play Store app on your Android device or visit <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">play.google.com/store/apps</a> in your web browser.</div>
+                        </li>
+                        <li>
+                            <div class="step-title">Search for Apps</div>
+                            <div class="step-description">Use the search bar to find specific apps by name, developer, or category. Browse featured apps and recommendations.</div>
+                        </li>
+                        <li>
+                            <div class="step-title">Verify App Details</div>
+                            <div class="step-description">Check the developer name, read user reviews, view screenshots, and examine the app description for authenticity.</div>
+                        </li>
+                        <li>
+                            <div class="step-title">Review Permissions</div>
+                            <div class="step-description">Before installing, review what permissions the app requests. Only grant permissions necessary for the app's core functionality.</div>
+                        </li>
+                        <li>
+                            <div class="step-title">Install the App</div>
+                            <div class="step-description">Tap the "Install" button for free apps or "Buy" for paid apps. The download and installation will begin automatically.</div>
+                        </li>
+                        <li>
+                            <div class="step-title">Launch Your App</div>
+                            <div class="step-description">Once installation is complete, tap "Open" or find the app icon in your app drawer to start using your new app.</div>
+                        </li>
+                    </ol>
+
+                    <h2 class="subsection-title">Popular App Categories</h2>
+
+                    <div class="categories-grid">
+                        <a href="https://play.google.com/store/apps/category/COMMUNICATION" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">💬</span>
+                            <h3 class="category-title">Communication</h3>
+                            <p class="category-description">WhatsApp, Telegram, Discord, Zoom</p>
+                        </a>
+                        <a href="https://play.google.com/store/apps/category/GAME" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">🎮</span>
+                            <h3 class="category-title">Games</h3>
+                            <p class="category-description">Action, Puzzle, Strategy, Casual Games</p>
+                        </a>
+                        <a href="https://play.google.com/store/apps/category/SOCIAL" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">📱</span>
+                            <h3 class="category-title">Social</h3>
+                            <p class="category-description">Instagram, TikTok, Facebook, Twitter</p>
+                        </a>
+                        <a href="https://play.google.com/store/apps/category/PRODUCTIVITY" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">📊</span>
+                            <h3 class="category-title">Productivity</h3>
+                            <p class="category-description">Office apps, Note-taking, Calendars</p>
+                        </a>
+                        <a href="https://play.google.com/store/apps/category/ENTERTAINMENT" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">🎬</span>
+                            <h3 class="category-title">Entertainment</h3>
+                            <p class="category-description">Netflix, YouTube, Spotify, Prime Video</p>
+                        </a>
+                        <a href="https://play.google.com/store/apps/category/SHOPPING" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <span class="category-icon">🛒</span>
+                            <h3 class="category-title">Shopping</h3>
+                            <p class="category-description">Amazon, eBay, Shopify, AliExpress</p>
+                        </a>
+                    </div>
+
+                    <h2 class="subsection-title">Troubleshooting Common Issues</h2>
+
+                    <div class="highlight-box">
+                        <h3 style="margin-bottom: 16px;">🔧 Quick Solutions:</h3>
+                        <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+                            <li><strong>Insufficient Storage:</strong> Clear cache, delete unused apps, or move files to cloud storage</li>
+                            <li><strong>Network Problems:</strong> Check Wi-Fi connection, try mobile data, or restart your router</li>
+                            <li><strong>Play Store Issues:</strong> Clear Play Store cache and data in Android Settings</li>
+                            <li><strong>Account Problems:</strong> Sign out and sign back into your Google account</li>
+                            <li><strong>Device Compatibility:</strong> Ensure your Android version meets app requirements</li>
+                            <li><strong>Regional Restrictions:</strong> Some apps may not be available in certain countries</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="subsection-title">Best Practices for Safe App Installation</h2>
+
+                    <p class="content-text">
+                        Follow these security guidelines when you <strong>download apps from Google Play Store</strong>:
+                    </p>
+
+                    <ul style="margin: 24px 0; padding-left: 24px; line-height: 1.8;">
+                        <li>Always verify the app developer's authenticity and reputation</li>
+                        <li>Read user reviews and check overall app ratings before installing</li>
+                        <li>Review app permissions carefully - be cautious of excessive permissions</li>
+                        <li>Keep your apps updated to the latest versions for security patches</li>
+                        <li>Enable Google Play Protect for additional malware protection</li>
+                        <li>Avoid apps with poor reviews, suspicious permissions, or unknown developers</li>
+                        <li>Use the official Google Play Store instead of third-party app stores</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p><strong>🎯 Ready to Start?</strong> Visit the official <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Google Play Store</a> now to explore millions of apps and start your safe app installation journey!</p>
+                    </div>
+
+                    <h2 class="subsection-title">Managing Your Installed Apps</h2>
+
+                    <p class="content-text">
+                        After successful <strong>Google Play Store app installation</strong>, effective app management is crucial:
+                    </p>
+
+                    <ul style="margin: 24px 0; padding-left: 24px; line-height: 1.8;">
+                        <li>Regularly update apps through the "My apps & games" section</li>
+                        <li>Manage app subscriptions and in-app purchases</li>
+                        <li>Review and modify app permissions as needed</li>
+                        <li>Uninstall apps you no longer use to free up storage</li>
+                        <li>Check your app download history and purchases</li>
+                        <li>Enable automatic updates for critical apps</li>
+                    </ul>
+                </article>
+
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Quick Access</h3>
+                        <ul class="quick-links">
+                            <li><a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">🔗 Google Play Store</a></li>
+                            <li><a href="https://play.google.com/store/apps/category/GAME" target="_blank" rel="noopener noreferrer">🎮 Games</a></li>
+                            <li><a href="https://play.google.com/store/apps/category/SOCIAL" target="_blank" rel="noopener noreferrer">📱 Social Apps</a></li>
+                            <li><a href="https://play.google.com/store/apps/category/PRODUCTIVITY" target="_blank" rel="noopener noreferrer">📊 Productivity</a></li>
+                            <li><a href="https://play.google.com/store/apps/category/ENTERTAINMENT" target="_blank" rel="noopener noreferrer">🎬 Entertainment</a></li>
+                            <li><a href="https://play.google.com/store/apps/category/SHOPPING" target="_blank" rel="noopener noreferrer">🛒 Shopping</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Most Downloaded Apps</h3>
+                        <ul class="popular-apps">
+                            <li>
+                                <div class="app-icon">💬</div>
+                                <div class="app-info">
+                                    <div class="app-name">WhatsApp Messenger</div>
+                                    <div class="app-category">Communication</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="app-icon">📸</div>
+                                <div class="app-info">
+                                    <div class="app-name">Instagram</div>
+                                    <div class="app-category">Social</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="app-icon">🎵</div>
+                                <div class="app-info">
+                                    <div class="app-name">Spotify</div>
+                                    <div class="app-category">Music & Audio</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="app-icon">🎮</div>
+                                <div class="app-info">
+                                    <div class="app-name">Among Us</div>
+                                    <div class="app-category">Games</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="app-icon">🛒</div>
+                                <div class="app-info">
+                                    <div class="app-name">Amazon Shopping</div>
+                                    <div class="app-category">Shopping</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="app-icon">🎬</div>
+                                <div class="app-info">
+                                    <div class="app-name">Netflix</div>
+                                    <div class="app-category">Entertainment</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Installation Stats</h3>
+                        <div style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">
+                            <p>📱 <strong>3.5M+</strong> apps available</p>
+                            <p>⬇️ <strong>111B+</strong> downloads in 2023</p>
+                            <p>🔒 <strong>99.9%</strong> security success rate</p>
+                            <p>⭐ <strong>4.2</strong> average app rating</p>
+                            <p>🌍 <strong>190+</strong> countries served</p>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
         <div class="container">
-            <h2>Đăng Ký Nhận Tin</h2>
-            <p>Nhận thông tin về sách mới và ưu đãi đặc biệt</p>
-            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-                <input type="email" placeholder="Nhập email của bạn" required>
-                <button type="submit">Đăng Ký</button>
-            </form>
+            <div class="faq-container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I safely install apps from Google Play Store?
+                    </div>
+                    <div class="faq-answer">
+                        <p>To safely install apps: 1) Only use the official Google Play Store at <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">play.google.com/store/apps</a>, 2) Verify the developer's authenticity, 3) Read user reviews and ratings, 4) Check app permissions before installation, and 5) Keep Google Play Protect enabled for real-time security scanning.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Why can't I install certain apps from the Play Store?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Common reasons include: insufficient device storage, incompatible Android version, regional app restrictions, poor network connectivity, or device hardware limitations. Check these factors and ensure your device meets the app's minimum requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I update apps installed from Google Play Store?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Open Google Play Store, tap the profile icon, select "Manage apps & device," then choose "Update all" for batch updates or update individual apps. You can also enable automatic updates in Play Store settings for seamless updates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Is Google Play Store safe for app downloads?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Google Play Store is the safest platform for Android app downloads. Google Play Protect scans over 125 billion apps daily for malware and security threats. The platform uses machine learning and manual review processes to ensure app safety and authenticity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can I install Play Store apps on multiple devices?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, apps purchased or downloaded with your Google account can be installed on multiple Android devices linked to the same account. Your app purchases, download history, and licenses are tied to your Google account, not individual devices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        What should I do if an app won't install from Play Store?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Try these solutions: 1) Clear Google Play Store cache and data, 2) Check available storage space, 3) Ensure stable internet connection, 4) Restart your device, 5) Update Google Play Store app, 6) Check if the app is compatible with your device, or 7) Sign out and back into your Google account.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -975,469 +1084,198 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Về BookStore Pro</h3>
-                    <p>Chúng tôi là cửa hàng sách trực tuyến hàng đầu Việt Nam, cam kết mang đến những cuốn sách chất lượng với giá cả phải chăng.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <h3>About This Guide</h3>
+                    <p style="color: #ccc; font-size: 14px; line-height: 1.6;">Comprehensive resource for Google Play Store app installation, security best practices, and troubleshooting solutions. We help millions of Android users navigate app downloads safely.</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Liên Kết Nhanh</h3>
+                    <h3>Google Play Store</h3>
                     <ul>
-                        <li><a href="#">Về Chúng Tôi</a></li>
-                        <li><a href="#">Chính Sách Bảo Mật</a></li>
-                        <li><a href="#">Điều Khoản Sử Dụng</a></li>
-                        <li><a href="#">Câu Hỏi Thường Gặp</a></li>
-                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Official Play Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/GAME" target="_blank" rel="noopener noreferrer">Games</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/SOCIAL" target="_blank" rel="noopener noreferrer">Social Apps</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/PRODUCTIVITY" target="_blank" rel="noopener noreferrer">Productivity</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/ENTERTAINMENT" target="_blank" rel="noopener noreferrer">Entertainment</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Hỗ Trợ Khách Hàng</h3>
+                    <h3>Popular Categories</h3>
                     <ul>
-                        <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
-                        <li><a href="#">Chính Sách Đổi Trả</a></li>
-                        <li><a href="#">Phương Thức Thanh Toán</a></li>
-                        <li><a href="#">Vận Chuyển</a></li>
-                        <li><a href="#">Bảo Hành</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/COMMUNICATION" target="_blank" rel="noopener noreferrer">Communication</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/SHOPPING" target="_blank" rel="noopener noreferrer">Shopping</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/PHOTOGRAPHY" target="_blank" rel="noopener noreferrer">Photography</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/MUSIC_AND_AUDIO" target="_blank" rel="noopener noreferrer">Music & Audio</a></li>
+                        <li><a href="https://play.google.com/store/apps/category/TRAVEL_AND_LOCAL" target="_blank" rel="noopener noreferrer">Travel & Local</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Thông Tin Liên Hệ</h3>
+                    <h3>Resources</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
-                        <li><i class="fas fa-phone"></i> 0123 456 789</li>
-                        <li><i class="fas fa-envelope"></i> support@bookstore.vn</li>
-                        <li><i class="fas fa-clock"></i> T2-CN: 8:00 - 22:00</li>
+                        <li><a href="#installation">Installation Guide</a></li>
+                        <li><a href="#security">Security Tips</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        <li><a href="https://support.google.com/googleplay" target="_blank" rel="noopener noreferrer">Google Play Help</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 BookStore Pro. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; 2024 Google Play Store Installation Guide. This site provides educational content about Google Play Store. Not affiliated with Google LLC. Google Play and the Google Play logo are trademarks of Google LLC.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Shopping Cart Modal -->
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content">
-            <div class="cart-header">
-                <h3>Giỏ Hàng Của Bạn</h3>
-                <button class="close-cart" onclick="toggleCart()">&times;</button>
-            </div>
-            <div class="cart-items" id="cartItems">
-                <p style="text-align: center; color: #7f8c8d; padding: 40px;">Giỏ hàng của bạn đang trống</p>
-            </div>
-            <div class="cart-total" id="cartTotal" style="display: none;">
-                <div class="total-row">
-                    <span>Tạm tính:</span>
-                    <span id="subtotal">0đ</span>
-                </div>
-                <div class="total-row">
-                    <span>Phí vận chuyển:</span>
-                    <span id="shipping">30.000đ</span>
-                </div>
-                <div class="total-row final">
-                    <span>Tổng cộng:</span>
-                    <span id="total">0đ</span>
-                </div>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">Tiến Hành Thanh Toán</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Sample book data
-        const books = [
-            {
-                id: 1,
-                title: "Đắc Nhân Tâm",
-                author: "Dale Carnegie",
-                price: 89000,
-                originalPrice: 120000,
-                rating: 4.8,
-                reviews: 1234,
-                category: "tam-ly",
-                type: "bestseller",
-                badge: "Bán Chạy"
-            },
-            {
-                id: 2,
-                title: "Sapiens: Lược Sử Loài Người",
-                author: "Yuval Noah Harari",
-                price: 165000,
-                originalPrice: 220000,
-                rating: 4.9,
-                reviews: 890,
-                category: "khoa-hoc",
-                type: "new",
-                badge: "Mới"
-            },
-            {
-                id: 3,
-                title: "Nhà Giả Kim",
-                author: "Paulo Coelho",
-                price: 75000,
-                originalPrice: 95000,
-                rating: 4.7,
-                reviews: 2156,
-                category: "van-hoc",
-                type: "bestseller",
-                badge: "Bán Chạy"
-            },
-            {
-                id: 4,
-                title: "Tư Duy Nhanh Và Chậm",
-                author: "Daniel Kahneman",
-                price: 180000,
-                originalPrice: 250000,
-                rating: 4.6,
-                reviews: 567,
-                category: "tam-ly",
-                type: "sale",
-                badge: "Giảm 28%"
-            },
-            {
-                id: 5,
-                title: "Atomic Habits",
-                author: "James Clear",
-                price: 140000,
-                originalPrice: 190000,
-                rating: 4.9,
-                reviews: 1890,
-                category: "ky-nang",
-                type: "new",
-                badge: "Mới"
-            },
-            {
-                id: 6,
-                title: "Lean Startup",
-                author: "Eric Ries",
-                price: 125000,
-                originalPrice: 160000,
-                rating: 4.5,
-                reviews: 456,
-                category: "kinh-te",
-                type: "bestseller",
-                badge: "Bán Chạy"
-            },
-            {
-                id: 7,
-                title: "Cây Cam Ngọt Của Tôi",
-                author: "José Mauro de Vasconcelos",
-                price: 99000,
-                originalPrice: 130000,
-                rating: 4.8,
-                reviews: 1567,
-                category: "van-hoc",
-                type: "sale",
-                badge: "Giảm 24%"
-            },
-            {
-                id: 8,
-                title: "Dế Mèn Phiêu Lưu Ký",
-                author: "Tô Hoài",
-                price: 45000,
-                originalPrice: 60000,
-                rating: 4.9,
-                reviews: 890,
-                category: "thieu-nhi",
-                type: "bestseller",
-                badge: "Kinh Điển"
-            }
-        ];
-
-        let cart = [];
-        let currentFilter = 'all';
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
-            loadProducts();
-            updateCartDisplay();
-        });
-
-        // Load products
-        function loadProducts(filteredBooks = books) {
-            const grid = document.getElementById('productsGrid');
-            grid.innerHTML = '';
-
-            filteredBooks.forEach(book => {
-                const productCard = createProductCard(book);
-                grid.appendChild(productCard);
+        // FAQ Toggle Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                ans.classList.remove('active');
             });
-        }
-
-        // Create product card
-        function createProductCard(book) {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <div class="product-image">
-                    <i class="fas fa-book"></i>
-                    <div class="product-badge">${book.badge}</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">${book.title}</h3>
-                    <p class="product-author">Tác giả: ${book.author}</p>
-                    <div class="product-rating">
-                        <div class="stars">
-                            ${'★'.repeat(Math.floor(book.rating))}${'☆'.repeat(5 - Math.floor(book.rating))}
-                        </div>
-                        <span class="rating-text">${book.rating} (${book.reviews} đánh giá)</span>
-                    </div>
-                    <div class="product-price">
-                        <span class="current-price">${formatPrice(book.price)}</span>
-                        ${book.originalPrice > book.price ? `<span class="old-price">${formatPrice(book.originalPrice)}</span>` : ''}
-                    </div>
-                    <div class="product-actions">
-                        <button class="btn btn-primary btn-sm" onclick="addToCart(${book.id})">
-                            <i class="fas fa-cart-plus"></i> Thêm vào giỏ
-                        </button>
-                        <button class="btn btn-outline-primary btn-sm" onclick="viewDetails(${book.id})">
-                            Chi tiết
-                        </button>
-                    </div>
-                </div>
-            `;
-            return card;
-        }
-
-        // Format price
-        function formatPrice(price) {
-            return new Intl.NumberFormat('vi-VN', {
-                style: 'currency',
-                currency: 'VND'
-            }).format(price);
-        }
-
-        // Filter products
-        function filterProducts(type) {
-            currentFilter = type;
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+            });
             
-            // Update active filter button
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            let filteredBooks;
-            if (type === 'all') {
-                filteredBooks = books;
-            } else {
-                filteredBooks = books.filter(book => book.type === type);
-            }
-            
-            loadProducts(filteredBooks);
-        }
-
-        // Filter by category
-        function filterByCategory(category) {
-            const filteredBooks = books.filter(book => book.category === category);
-            loadProducts(filteredBooks);
-            
-            // Scroll to products section
-            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Sort products
-        function sortProducts(sortType) {
-            let sortedBooks = [...books];
-            
-            switch(sortType) {
-                case 'price-low':
-                    sortedBooks.sort((a, b) => a.price - b.price);
-                    break;
-                case 'price-high':
-                    sortedBooks.sort((a, b) => b.price - a.price);
-                    break;
-                case 'name':
-                    sortedBooks.sort((a, b) => a.title.localeCompare(b.title));
-                    break;
-                case 'rating':
-                    sortedBooks.sort((a, b) => b.rating - a.rating);
-                    break;
-                default:
-                    sortedBooks = books;
-            }
-            
-            loadProducts(sortedBooks);
-        }
-
-        // Search books
-        function searchBooks() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const filteredBooks = books.filter(book => 
-                book.title.toLowerCase().includes(searchTerm) ||
-                book.author.toLowerCase().includes(searchTerm)
-            );
-            
-            loadProducts(filteredBooks);
-            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Add to cart
-        function addToCart(bookId) {
-            const book = books.find(b => b.id === bookId);
-            const existingItem = cart.find(item => item.id === bookId);
-            
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({
-                    ...book,
-                    quantity: 1
-                });
-            }
-            
-            updateCartDisplay();
-            showNotification('Đã thêm sách vào giỏ hàng!');
-        }
-
-        // Remove from cart
-        function removeFromCart(bookId) {
-            cart = cart.filter(item => item.id !== bookId);
-            updateCartDisplay();
-        }
-
-        // Update quantity
-        function updateQuantity(bookId, change) {
-            const item = cart.find(item => item.id === bookId);
-            if (item) {
-                item.quantity += change;
-                if (item.quantity <= 0) {
-                    removeFromCart(bookId);
-                } else {
-                    updateCartDisplay();
-                }
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                answer.classList.add('active');
+                element.classList.add('active');
             }
         }
 
-        // Update cart display
-        function updateCartDisplay() {
-            const cartCount = document.getElementById('cartCount');
-            const cartItems = document.getElementById('cartItems');
-            const cartTotal = document.getElementById('cartTotal');
-            
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            cartCount.textContent = totalItems;
-            
-            if (cart.length === 0) {
-                cartItems.innerHTML = '<p style="text-align: center; color: #7f8c8d; padding: 40px;">Giỏ hàng của bạn đang trống</p>';
-                cartTotal.style.display = 'none';
-            } else {
-                cartItems.innerHTML = cart.map(item => `
-                    <div class="cart-item">
-                        <div class="cart-item-image">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="cart-item-info">
-                            <div class="cart-item-title">${item.title}</div>
-                            <div class="cart-item-price">${formatPrice(item.price)}</div>
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
-                                <span class="quantity">${item.quantity}</span>
-                                <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
-                                <button class="remove-item" onclick="removeFromCart(${item.id})">Xóa</button>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-                
-                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-                const shipping = subtotal >= 200000 ? 0 : 30000;
-                const total = subtotal + shipping;
-                
-                document.getElementById('subtotal').textContent = formatPrice(subtotal);
-                document.getElementById('shipping').textContent = formatPrice(shipping);
-                document.getElementById('total').textContent = formatPrice(total);
-                
-                cartTotal.style.display = 'block';
-            }
-        }
-
-        // Toggle cart modal
-        function toggleCart() {
-            const modal = document.getElementById('cartModal');
-            modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
-        }
-
-        // Close cart when clicking outside
-        document.getElementById('cartModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                toggleCart();
-            }
-        });
-
-        // View book details
-        function viewDetails(bookId) {
-            const book = books.find(b => b.id === bookId);
-            alert(`Chi tiết sách: ${book.title}\nTác giả: ${book.author}\nGiá: ${formatPrice(book.price)}\nĐánh giá: ${book.rating}/5`);
-        }
-
-        // Subscribe newsletter
-        function subscribeNewsletter(event) {
-            event.preventDefault();
-            const email = event.target.querySelector('input[type="email"]').value;
-            showNotification('Cảm ơn bạn đã đăng ký nhận tin!');
-            event.target.reset();
-        }
-
-        // Show notification
-        function showNotification(message) {
-            // Create notification element
-            const notification = document.createElement('div');
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: var(--secondary-color);
-                color: white;
-                padding: 15px 20px;
-                border-radius: 5px;
-                z-index: 3000;
-                box-shadow: var(--shadow);
-                transform: translateX(100%);
-                transition: transform 0.3s;
-            `;
-            notification.textContent = message;
-            
-            document.body.appendChild(notification);
-            
-            // Show notification
-            setTimeout(() => {
-                notification.style.transform = 'translateX(0)';
-            }, 100);
-            
-            // Hide notification
-            setTimeout(() => {
-                notification.style.transform = 'translateX(100%)';
-                setTimeout(() => {
-                    document.body.removeChild(notification);
-                }, 300);
-            }, 3000);
-        }
-
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
 
-        // Search on Enter key
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                searchBooks();
+        // Track Google Play Store link clicks
+        document.querySelectorAll('a[href*="play.google.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Analytics tracking for Play Store clicks
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'outbound',
+                        'event_label': 'Google Play Store',
+                        'value': 1
+                    });
+                }
+            });
+        });
+
+        // Reading progress indicator
+        window.addEventListener('scroll', function() {
+            const scrollProgress = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            
+            // Create progress bar if it doesn't exist
+            let progressBar = document.querySelector('.reading-progress');
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.className = 'reading-progress';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: ${scrollProgress}%;
+                    height: 3px;
+                    background: var(--google-blue);
+                    z-index: 9999;
+                    transition: width 0.1s;
+                `;
+                document.body.appendChild(progressBar);
+            } else {
+                progressBar.style.width = scrollProgress + '%';
             }
         });
+
+        // Enhanced security warning for external downloads
+        function showSecurityWarning() {
+            const warning = document.createElement('div');
+            warning.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--google-red);
+                color: white;
+                padding: 16px;
+                border-radius: 8px;
+                box-shadow: var(--shadow);
+                z-index: 10000;
+                max-width: 300px;
+                font-size: 14px;
+            `;
+            warning.innerHTML = `
+                <strong>🔒 Security Reminder:</strong> Always download apps from the official Google Play Store to ensure your device's security.
+                <button onclick="this.parentElement.remove()" style="background: none; border: none; color: white; float: right; cursor: pointer;">✕</button>
+            `;
+            document.body.appendChild(warning);
+            
+            setTimeout(() => {
+                if (warning.parentElement) {
+                    warning.remove();
+                }
+            }, 5000);
+        }
+
+        // Show security warning when page loads
+        setTimeout(showSecurityWarning, 3000);
+    </script>
+
+    <!-- Schema.org FAQ structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I safely install apps from Google Play Store?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To safely install apps: 1) Only use the official Google Play Store, 2) Verify the developer's authenticity, 3) Read user reviews and ratings, 4) Check app permissions before installation, and 5) Keep Google Play Protect enabled for real-time security scanning."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Google Play Store safe for app downloads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Google Play Store is the safest platform for Android app downloads. Google Play Protect scans over 125 billion apps daily for malware and security threats."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I update apps installed from Google Play Store?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Open Google Play Store, tap the profile icon, select 'Manage apps & device,' then choose 'Update all' for batch updates or update individual apps."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Google Analytics (Replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 </body>
 </html>
